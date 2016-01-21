@@ -1,0 +1,10 @@
+PODS:
+  - EasyAlert (0.0.1)
+
+DEPENDENCIES:
+  - EasyAlert
+
+SPEC CHECKSUMS:
+  EasyAlert: 199a656a711e326109beb31cd22c83851988e4a8
+
+COCOAPODS: 0.39.0
