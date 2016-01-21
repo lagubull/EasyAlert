@@ -6,7 +6,7 @@ s.summary      = "EasyAlert is a bundle of convenient methods that wrap UIALertC
 
 s.homepage     = "https://github.com/lagubull/"
 
-s.license      = {:type => 'PUBLIC USE', :file => 'LICENSE.md' }
+s.license      = {:type => 'MIT', :file => 'LICENSE.md' }
 
 s.author       = { "Javier Laguna" => "lagubull@hotmail.com" }
 
