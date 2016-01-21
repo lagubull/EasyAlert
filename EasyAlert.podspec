@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "EasyAlert"
-s.version      = "0.0.1"
+s.version      = "0.0.2"
 s.summary      = "EasyAlert is a bundle of convenient methods that wrap UIALertController to reduce the amount of boiler plate code needed."
 
 s.homepage     = "https://github.com/lagubull/"
