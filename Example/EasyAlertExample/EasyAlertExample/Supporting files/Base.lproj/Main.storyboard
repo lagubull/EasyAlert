@@ -8,7 +8,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EAEHomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,6 +23,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="100" y="42" width="201" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="ShowDismissableAlert1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JFB-q2-8SU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zS-wl-SM2">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -30,6 +33,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="100" y="100" width="201" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="ShowDismissableAlert2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4sL-Mg-X9M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODf-DW-TJk">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -37,6 +43,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="100" y="166" width="201" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="ShowDismissableAlert3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMM-bW-ZdU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
