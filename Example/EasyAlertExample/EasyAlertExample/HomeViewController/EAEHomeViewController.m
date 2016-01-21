@@ -16,6 +16,14 @@
 
 @implementation EAEHomeViewController
 
+#pragma mark - LifeCycle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+}
 
 #pragma mark - Examples
 
@@ -45,7 +53,7 @@
                                                             style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction  *action)
                                     {
-                                        self.view.backgroundColor = [UIColor redColor];
+                                        self.view.backgroundColor = [UIColor whiteColor];
                                     }];
     
     //If the background color is not red we don't let them try to change it
@@ -70,19 +78,24 @@
                                            self.view.backgroundColor = [UIColor redColor];
                                        }];
     
+    //If the background color is already red we don't let them try to change it again
+    
+    paintItRedAction.enabled = (self.view.backgroundColor == [UIColor whiteColor]);
+    
     UIAlertAction *restoreAction = [UIAlertAction actionWithTitle:@"Restore"
                                                             style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction  *action)
                                     {
-                                        self.view.backgroundColor = [UIColor redColor];
+                                        self.view.backgroundColor = [UIColor whiteColor];
                                     }];
     
+    //If the background color is not red we don't let them try to change it
+    
+    restoreAction.enabled = (self.view.backgroundColor == [UIColor redColor]);
+    
     UIAlertAction *gotItAction = [UIAlertAction actionWithTitle:@"Got it!"
-                                                          style:UIAlertActionStyleDestructive
-                                                        handler:^(UIAlertAction  *action)
-                                  {
-                                      self.view.backgroundColor = [UIColor redColor];
-                                  }];
+                                                          style:UIAlertActionStyleCancel
+                                                        handler:nil];
     
     LEAAlertController *alert = [LEAAlertController alertViewWithTitle:@"Info"
                                                                message:@"This is an Easy Alert example"
