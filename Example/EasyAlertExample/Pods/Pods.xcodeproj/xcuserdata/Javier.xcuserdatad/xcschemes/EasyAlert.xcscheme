@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4C22F39C9E535890B34FE518'
+               BlueprintIdentifier = '1EECCFC4AF66C86F9FDD3F93'
                BlueprintName = 'EasyAlert'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libEasyAlert.a'>
