@@ -13,3 +13,7 @@
 - Added Example for show an action sheet.
 - Added ChangeLog.
 - Added extended ReadMe.
+
+## 1.0.1
+
+- Updated Example for version 1.0.0

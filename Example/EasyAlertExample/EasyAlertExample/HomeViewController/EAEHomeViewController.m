@@ -116,13 +116,13 @@
     LEAActionSheet *actionSheet = [LEAActionSheet actionSheetWithTitle:@"Select an option:"];
     
     [actionSheet addButtonWithTitle:@"Regular option"
-                           andBlock:^(LEAActionSheet *actionSheet)
+                              block:^(LEAActionSheet *actionSheet)
      {
          [weakSelf showDismissableAlert1:nil];
      }];
     
     [actionSheet  addCancelButtonWithTitle:@"Cancel"
-                                  andBlock:^(LEAActionSheet *actionSheet)
+                                     block:^(LEAActionSheet *actionSheet)
      {
          LEAAlertController *alert = [LEAAlertController dismissibleAlertViewWithTitle:@"Info"
                                                                                message:@"Cancelled"
@@ -132,7 +132,7 @@
      }];
     
     [actionSheet addDestructiveButtonWithTitle:@"Destructive button"
-                                      andBlock:^(LEAActionSheet *actionSheet)
+                                         block:^(LEAActionSheet *actionSheet)
      {
          LEAAlertController *alert = [LEAAlertController dismissibleAlertViewWithTitle:@"Warning"
                                                                                message:@"Destructive button pressed"
