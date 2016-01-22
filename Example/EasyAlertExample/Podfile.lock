@@ -1,10 +1,10 @@
 PODS:
-  - EasyAlert (0.0.2)
+  - EasyAlert (1.0.0)
 
 DEPENDENCIES:
   - EasyAlert
 
 SPEC CHECKSUMS:
-  EasyAlert: 155485872f4980841ce96ef6990134f75c09f55f
+  EasyAlert: 9f4719773f8b13a840b99bd343423f1120f20a4e
 
 COCOAPODS: 0.39.0
