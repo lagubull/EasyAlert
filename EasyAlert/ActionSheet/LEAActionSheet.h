@@ -36,7 +36,7 @@ typedef void (^LEAActionSheetButtonPressed)(LEAActionSheet *actionSheet);
  @return block - action to be exectured after pressing on the button.
  */
 - (void)addButtonWithTitle:(NSString *)title
-                  andBlock:(LEAActionSheetButtonPressed)block;
+                     block:(LEAActionSheetButtonPressed)block;
 
 /**
  Adds a button with UIAlertActionStyleCancel style and an action.
@@ -45,7 +45,7 @@ typedef void (^LEAActionSheetButtonPressed)(LEAActionSheet *actionSheet);
  @return block - action to be exectured after pressing on the button.
  */
 - (void)addCancelButtonWithTitle:(NSString *)title
-                        andBlock:(LEAActionSheetButtonPressed)block;
+                           block:(LEAActionSheetButtonPressed)block;
 
 /**
  Adds a button with UIAlertActionStyleDestructive style and an action.
@@ -54,7 +54,7 @@ typedef void (^LEAActionSheetButtonPressed)(LEAActionSheet *actionSheet);
  @return block - action to be exectured after pressing on the button.
  */
 - (void)addDestructiveButtonWithTitle:(NSString *)title
-                             andBlock:(LEAActionSheetButtonPressed)block;
+                                block:(LEAActionSheetButtonPressed)block;
 
 /**
  Presents the alert.

@@ -58,7 +58,7 @@
 #pragma mark - StyledButtons
 
 - (void)addCancelButtonWithTitle:(NSString *)title
-                        andBlock:(LEAActionSheetButtonPressed)block
+                           block:(LEAActionSheetButtonPressed)block
 {
     [self addButtonWithTitle:title
                     andBlock:block
@@ -66,7 +66,7 @@
 }
 
 - (void)addDestructiveButtonWithTitle:(NSString *)title
-                             andBlock:(LEAActionSheetButtonPressed)block
+                                block:(LEAActionSheetButtonPressed)block
 {
     [self addButtonWithTitle:title
                     andBlock:block
@@ -74,7 +74,7 @@
 }
 
 - (void)addButtonWithTitle:(NSString *)title
-                  andBlock:(LEAActionSheetButtonPressed)block
+                     block:(LEAActionSheetButtonPressed)block
 {
     [self addButtonWithTitle:title
                     andBlock:block

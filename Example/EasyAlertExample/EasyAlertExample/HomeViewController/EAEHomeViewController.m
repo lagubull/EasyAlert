@@ -9,6 +9,7 @@
 #import "EAEHomeViewController.h"
 
 #import <LEAAlertController.h>
+#import <LEAActionSheet.h>
 
 @interface EAEHomeViewController ()
 
@@ -27,7 +28,7 @@
 
 #pragma mark - Examples
 
-- (IBAction)ShowDismissableAlert1:(id)sender
+- (IBAction)showDismissableAlert1:(id)sender
 {
     LEAAlertController *alert = [LEAAlertController dismissibleAlertViewWithTitle:@"Info"
                                                                           message:@"This is an Easy Alert example"
@@ -36,13 +37,15 @@
     [alert showInViewController:self];
 }
 
-- (IBAction)ShowDismissableAlert2:(id)sender
+- (IBAction)showDismissableAlert2:(id)sender
 {
+    __weak typeof (self) weakSelf = self;
+    
     UIAlertAction *paintItRedAction = [UIAlertAction actionWithTitle:@"Paint it Red"
                                                                style:UIAlertActionStyleDefault
                                                              handler:^(UIAlertAction  *action)
                                        {
-                                           self.view.backgroundColor = [UIColor redColor];
+                                           weakSelf.view.backgroundColor = [UIColor redColor];
                                        }];
     
     //If the background color is already red we don't let them try to change it again
@@ -53,7 +56,7 @@
                                                             style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction  *action)
                                     {
-                                        self.view.backgroundColor = [UIColor whiteColor];
+                                        weakSelf.view.backgroundColor = [UIColor whiteColor];
                                     }];
     
     //If the background color is not red we don't let them try to change it
@@ -69,13 +72,15 @@
     [alert showInViewController:self];
 }
 
-- (IBAction)ShowDismissableAlert3:(id)sender
+- (IBAction)showDismissableAlert3:(id)sender
 {
+    __weak typeof (self) weakSelf = self;
+    
     UIAlertAction *paintItRedAction = [UIAlertAction actionWithTitle:@"Paint it Red"
                                                                style:UIAlertActionStyleDefault
                                                              handler:^(UIAlertAction  *action)
                                        {
-                                           self.view.backgroundColor = [UIColor redColor];
+                                           weakSelf.view.backgroundColor = [UIColor redColor];
                                        }];
     
     //If the background color is already red we don't let them try to change it again
@@ -86,7 +91,7 @@
                                                             style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction  *action)
                                     {
-                                        self.view.backgroundColor = [UIColor whiteColor];
+                                        weakSelf.view.backgroundColor = [UIColor whiteColor];
                                     }];
     
     //If the background color is not red we don't let them try to change it
@@ -102,6 +107,41 @@
                                                                actions:gotItAction, paintItRedAction, restoreAction, nil];
     
     [alert showInViewController:self];
+}
+
+- (IBAction)showActionSheet1:(id)sender
+{
+    __weak typeof (self) weakSelf = self;
+    
+    LEAActionSheet *actionSheet = [LEAActionSheet actionSheetWithTitle:@"Select an option:"];
+    
+    [actionSheet addButtonWithTitle:@"Regular option"
+                           andBlock:^(LEAActionSheet *actionSheet)
+     {
+         [weakSelf showDismissableAlert1:nil];
+     }];
+    
+    [actionSheet  addCancelButtonWithTitle:@"Cancel"
+                                  andBlock:^(LEAActionSheet *actionSheet)
+     {
+         LEAAlertController *alert = [LEAAlertController dismissibleAlertViewWithTitle:@"Info"
+                                                                               message:@"Cancelled"
+                                                                     cancelButtonTitle:@"Got it!"];
+         
+         [alert showInViewController:weakSelf];
+     }];
+    
+    [actionSheet addDestructiveButtonWithTitle:@"Destructive button"
+                                      andBlock:^(LEAActionSheet *actionSheet)
+     {
+         LEAAlertController *alert = [LEAAlertController dismissibleAlertViewWithTitle:@"Warning"
+                                                                               message:@"Destructive button pressed"
+                                                                     cancelButtonTitle:@"Got it!"];
+         
+         [alert showInViewController:weakSelf];
+     }];
+    
+    [actionSheet showInViewController:self];
 }
 
 @end

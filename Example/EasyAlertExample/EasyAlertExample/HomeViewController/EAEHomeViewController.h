@@ -10,10 +10,12 @@
 
 @interface EAEHomeViewController : UIViewController
 
-- (IBAction)ShowDismissableAlert1:(id)sender;
+- (IBAction)showDismissableAlert1:(id)sender;
 
-- (IBAction)ShowDismissableAlert2:(id)sender;
+- (IBAction)showDismissableAlert2:(id)sender;
 
-- (IBAction)ShowDismissableAlert3:(id)sender;
+- (IBAction)showDismissableAlert3:(id)sender;
+
+- (IBAction)showActionSheet1:(id)sender;
 
 @end

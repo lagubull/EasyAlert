@@ -17,40 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lW1-Dd-e4t">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Show Action Sheet 1"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="107" y="487" width="201" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showActionSheet1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gju-mW-C80"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rij-Dd-YdR">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Show Dismissable Alert 1"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="100" y="42" width="201" height="30"/>
+                                    <rect key="frame" x="107" y="283" width="201" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="ShowDismissableAlert1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JFB-q2-8SU"/>
+                                    <action selector="showDismissableAlert1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NyC-QK-FzJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zS-wl-SM2">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Show Dismissable Alert 2"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="100" y="100" width="201" height="30"/>
+                                    <rect key="frame" x="107" y="341" width="201" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="ShowDismissableAlert2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4sL-Mg-X9M"/>
+                                    <action selector="showDismissableAlert2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIM-Vi-ODe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODf-DW-TJk">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Show Dismissable Alert 3"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="100" y="166" width="201" height="30"/>
+                                    <rect key="frame" x="107" y="407" width="201" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="ShowDismissableAlert3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMM-bW-ZdU"/>
+                                    <action selector="showDismissableAlert3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="14B-6N-hm2"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="lW1-Dd-e4t"/>
                                 <exclude reference="Rij-Dd-YdR"/>
                                 <exclude reference="3zS-wl-SM2"/>
                                 <exclude reference="ODf-DW-TJk"/>
@@ -58,6 +69,7 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
+                                <include reference="lW1-Dd-e4t"/>
                                 <include reference="Rij-Dd-YdR"/>
                                 <include reference="3zS-wl-SM2"/>
                                 <include reference="ODf-DW-TJk"/>
