@@ -1,6 +1,8 @@
+[![Build Status](https://travis-ci.org/lagubull/EasyAlert.svg)](https://travis-ci.org/lagubull/EasyAlert)
 [![Version](https://img.shields.io/cocoapods/v/EasyAlert.svg?style=flat)](http://cocoapods.org/pods/EasyAlert)
 [![License](https://img.shields.io/cocoapods/l/EasyAlert.svg?style=flat)](http://cocoapods.org/pods/EasyAlert)
 [![Platform](https://img.shields.io/cocoapods/p/EasyAlert.svg?style=flat)](http://cocoapods.org/pods/EasyAlert)
+[![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/EasyAlert.svg)](http://cocoapods.org/pods/EasyAlert)
 
 EasyAlert is a bundle of convenient methods that wrap UIALertController to reduce the amount of boiler plate code needed.
 
