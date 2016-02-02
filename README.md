@@ -3,6 +3,7 @@
 [![License](https://img.shields.io/cocoapods/l/EasyAlert.svg?style=flat)](http://cocoapods.org/pods/EasyAlert)
 [![Platform](https://img.shields.io/cocoapods/p/EasyAlert.svg?style=flat)](http://cocoapods.org/pods/EasyAlert)
 [![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/EasyAlert.svg)](http://cocoapods.org/pods/EasyAlert)
+[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/lagubull/easyalert/)](http://clayallsopp.github.io/readme-score?url=https://github.com/lagubull/easyalert/)
 
 EasyAlert is a bundle of convenient methods that wrap UIALertController to reduce the amount of boiler plate code needed.
 
