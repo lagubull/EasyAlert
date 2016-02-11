@@ -4,7 +4,7 @@
 
 EasyAlert is a bundle of convenient methods that wrap UIALertController to reduce the amount of boiler plate code needed.
 
-##Installation via [Cocoapods](https://cocoapods.org/)
+##Installation via [CocoaPods](https://cocoapods.org/)
 
 To integrate EasyAlert into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
